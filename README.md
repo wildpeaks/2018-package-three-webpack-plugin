@@ -1,5 +1,7 @@
 # Webpack Plugin: Three
 
+[![Build Status](https://travis-ci.com/wildpeaks/package-three-webpack-plugin.svg?branch=master)](https://travis-ci.com/wildpeaks/package-three-webpack-plugin)
+
 Webpack plugin to use the additional **[Three.js](https://threejs.org/) "examples" classes that aren't ES Modules**,
 such as [THREE.OrbitControls](https://threejs.org/docs/index.html#examples/controls/OrbitControls).
 
