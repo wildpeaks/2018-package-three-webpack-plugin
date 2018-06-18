@@ -1,8 +1,6 @@
 # Webpack Plugin: Three
 
-[![Build Status](https://travis-ci.com/wildpeaks/package-three-webpack-plugin.svg?branch=master)](https://travis-ci.com/wildpeaks/package-three-webpack-plugin)
-
-[![Known Vulnerabilities](https://snyk.io/test/github/wildpeaks/package-three-webpack-plugin/badge.svg?targetFile=package.json)](https://snyk.io/test/github/wildpeaks/package-three-webpack-plugin?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-three-webpack-plugin.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.com/wildpeaks/package-three-webpack-plugin.svg?branch=master)](https://travis-ci.com/wildpeaks/package-three-webpack-plugin) [![Known Vulnerabilities](https://snyk.io/test/github/wildpeaks/package-three-webpack-plugin/badge.svg?targetFile=package.json)](https://snyk.io/test/github/wildpeaks/package-three-webpack-plugin?targetFile=package.json) [![Greenkeeper badge](https://badges.greenkeeper.io/wildpeaks/package-three-webpack-plugin.svg)](https://greenkeeper.io/)
 
 Webpack plugin to use the additional **[Three.js](https://threejs.org/) "examples" classes that aren't ES Modules**,
 such as [THREE.OrbitControls](https://threejs.org/docs/index.html#examples/controls/OrbitControls).
