@@ -1,6 +1,6 @@
 {
   "name": "@wildpeaks/three-webpack-plugin",
-  "version": "1.0.0-alpha1",
+  "version": "1.0.0",
   "description": "Webpack plugin to use Three.js \"examples\" classes that aren't ES Modules",
   "author": "Cecile Muller",
   "license": "MIT",
