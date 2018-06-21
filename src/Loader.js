@@ -14,9 +14,7 @@ function Loader(source){
 	code += `${source}\n`;
 
 	const optionsExports = options.exports;
-	if (typeof optionsExports === 'string'){
-		code += `module.exports = ${optionsExports};\n`;
-	} else if ((typeof optionsExports === 'object') && (optionsExports !== null)){
+	if ((typeof optionsExports === 'object') && (optionsExports !== null)){
 		const lines = [];
 		for (const id in optionsExports){
 			const exportId = optionsExports[id];

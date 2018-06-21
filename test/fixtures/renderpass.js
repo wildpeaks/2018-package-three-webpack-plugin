@@ -1,5 +1,5 @@
 import {Vector3} from 'three';
-import RenderPass from 'three/examples/js/postprocessing/RenderPass';
+import {RenderPass} from 'three/examples/js/postprocessing/RenderPass';
 
 const $div = document.createElement('div');
 $div.setAttribute('id', 'fixture');

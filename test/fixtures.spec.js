@@ -127,7 +127,7 @@ it('RenderPass', async() => {
 });
 
 it('CopyShader', async() => {
-	await testFixture('./copyshader.js', false, 'object string string');
+	await testFixture('./copyshader.js', false, 'object object string string');
 });
 
 it('Invalid path', async() => {

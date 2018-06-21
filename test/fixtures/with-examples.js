@@ -1,9 +1,6 @@
 import {Vector3} from 'three';
-import OrbitControls from "three/examples/js/controls/OrbitControls";
-import OBJLoader from "three/examples/js/loaders/OBJLoader";
-
-console.log('[OrbitControls]', OrbitControls);
-console.log('[OBJLoader]', OBJLoader);
+import {OrbitControls} from 'three/examples/js/controls/OrbitControls';
+import {OBJLoader} from 'three/examples/js/loaders/OBJLoader';
 
 const $div = document.createElement('div');
 $div.setAttribute('id', 'fixture');

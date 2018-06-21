@@ -32,7 +32,7 @@ You can now import the classes in your application:
 import {Scene, WebGLRenderer} from 'three';
 
 // Import from "three/examples/js" for addditional classes
-import OrbitControls from 'three/examples/js/controls/OrbitControls';
+import {OrbitControls} from 'three/examples/js/controls/OrbitControls';
 
 // Use the imported classes
 const scene = new Scene();

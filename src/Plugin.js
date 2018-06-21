@@ -29,14 +29,18 @@ class Plugin {
 								requires: [
 									'three/examples/js/postprocessing/EffectComposer'
 								],
-								exports: `THREE.${exportId}`
+								exports: {
+									[exportId]: `THREE.${exportId}`
+								}
 							}
 						});
 					} else {
 						loaders.push({
 							loader: Loader,
 							options: {
-								exports: `THREE.${exportId}`
+								exports: {
+									[exportId]: `THREE.${exportId}`
+								}
 							}
 						});
 					}
