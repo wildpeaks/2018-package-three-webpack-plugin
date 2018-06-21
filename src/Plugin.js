@@ -3,7 +3,6 @@
 const PLUGIN_ID = 'wildpeaks-three';
 const Loader = require.resolve('./Loader');
 
-
 class Plugin {
 	apply(compiler){ // eslint-disable-line class-methods-use-this
 		compiler.hooks.normalModuleFactory.tap(PLUGIN_ID, normalModuleFactory => {
@@ -11,7 +10,6 @@ class Plugin {
 				const {loaders, rawRequest} = data;
 				if (rawRequest.startsWith('three/examples/js/')){
 					const exportId = rawRequest.split('/').pop();
-
 					if (rawRequest === 'three/examples/js/postprocessing/EffectComposer'){
 						loaders.push({
 							loader: Loader,
