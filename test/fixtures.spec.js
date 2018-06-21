@@ -118,6 +118,18 @@ it('With examples', async() => {
 	await testFixture('./with-examples.js', false, 'function function function');
 });
 
+it('EffectComposer', async() => {
+	await testFixture('./effectcomposer.js', false, 'function function function');
+});
+
+it('RenderPass', async() => {
+	await testFixture('./renderpass.js', false, 'function function');
+});
+
+it('CopyShader', async() => {
+	await testFixture('./copyshader.js', false, 'object string string');
+});
+
 it('Invalid path', async() => {
 	const errors = await testFixture('./wrong-examples.js', true, '');
 	expect(errors.length).toBe(1, 'Has one error');
