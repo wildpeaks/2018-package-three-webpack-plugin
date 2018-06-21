@@ -4,7 +4,7 @@ const {getOptions} = require('loader-utils');
 
 function Loader(source){
 	const options = getOptions(this);
-	let code = `'use strict';\nconst THREE = require('three');\n`;
+	let code = `'use strict';\nvar THREE = require('three');\n`;
 
 	const optionsRequires = options.requires;
 	if (Array.isArray(optionsRequires)){
