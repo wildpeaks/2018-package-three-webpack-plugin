@@ -1,7 +1,7 @@
 import {Vector3} from 'three';
-import OBJLoader from "three/examples/js/fake/OBJLoader";
+import {RenderPass} from 'three/examples/js/postprocessing/RenderPass';
 
 const $div = document.createElement('div');
 $div.setAttribute('id', 'fixture');
-$div.innerText = `${typeof Vector3} ${typeof OBJLoader}`;
+$div.innerText = ` ${typeof Vector3} ${typeof RenderPass}`;
 document.body.appendChild($div);

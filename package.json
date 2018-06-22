@@ -1,6 +1,6 @@
 {
   "name": "@wildpeaks/three-webpack-plugin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Webpack plugin to use Three.js \"examples\" classes that aren't ES Modules",
   "author": "Cecile Muller",
   "license": "MIT",
@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/wildpeaks/package-three-webpack-plugin#readme",
   "dependencies": {
-    "exports-loader": "0.7.0",
-    "imports-loader": "0.8.0"
+    "loader-utils": "1.1.0"
   },
   "devDependencies": {
+    "@types/three": "0.92.7",
     "@wildpeaks/eslint-config-commonjs": "4.9.0",
     "eslint": "4.19.1",
     "express": "4.16.3",
@@ -37,6 +37,8 @@
     "puppeteer": "1.5.0",
     "rimraf": "2.6.2",
     "three": "0.93.0",
+    "ts-loader": "4.4.1",
+    "typescript": "2.9.2",
     "webpack": "4.12.0"
   },
   "peerDependencies": {
