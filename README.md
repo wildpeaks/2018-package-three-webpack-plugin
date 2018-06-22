@@ -39,3 +39,18 @@ const scene = new Scene();
 const renderer = new WebGLRenderer();
 const controls = new OrbitControls();
 ````
+
+
+## Typescript
+
+Until definitions are integrated directly in `@types/three`, add a file `globals.d.ts`
+at the root of your project to specify the types of the imports, e.g.:
+
+````ts
+declare module 'three/examples/js/controls/OrbitControls' {
+	export const OrbitControls: typeof THREE.OrbitControls;
+}
+````
+
+Note that this is *not* required for compiling to JS, it improves Intellisense in your code editor.
+
