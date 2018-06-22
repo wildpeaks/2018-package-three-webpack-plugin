@@ -8,5 +8,6 @@
 LICENSE         text
 *.md            text
 *.js            text
+*.ts            text
 *.json          text
 *.yml           text

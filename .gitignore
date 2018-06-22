@@ -22,7 +22,9 @@
 !/.vscode
 !/src
 !/test
+!/globals.d.ts
 !/package.json
+!/tsconfig.json
 
 #-----------------------------------------------------------------------------#
 # But make sure to ignore those regardless:

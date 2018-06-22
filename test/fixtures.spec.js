@@ -51,6 +51,21 @@ async function testFixture(entry, expectError, expectText){
 			path: outputFolder,
 			filename: '[name].js'
 		},
+		module: {
+			rules: entry.endsWith('.ts') ? [
+				{
+					test: /\.(ts|js)$/,
+					use: [
+						{
+							loader: 'ts-loader',
+							options: {
+								transpileOnly: true
+							}
+						}
+					]
+				}
+			] : []
+		},
 		plugins: [
 			new HtmlWebpackPlugin(),
 			new Plugin()
@@ -134,4 +149,12 @@ it('Invalid path', async() => {
 	const errors = await testFixture('./wrong-examples.js', true, '');
 	expect(errors.length).toBe(1, 'Has one error');
 	expect(errors[0] instanceof ModuleNotFoundError).toBe(true, 'The error is a ModuleNotFoundError');
+});
+
+it('Typescript: With examples', async() => {
+	await testFixture('./ts-with-examples.ts', false, 'function function function');
+});
+
+it('Typescript: RenderPass', async() => {
+	await testFixture('./ts-renderpass.ts', false, 'function function');
 });
