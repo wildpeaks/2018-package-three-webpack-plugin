@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/three": "0.92.7",
     "@wildpeaks/eslint-config-commonjs": "4.9.0",
-    "eslint": "4.19.1",
+    "eslint": "5.0.0",
     "express": "4.16.3",
     "html-webpack-plugin": "3.2.0",
     "jasmine": "3.1.0",
