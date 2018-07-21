@@ -20,10 +20,19 @@ module.exports = {
 	//...
 	plugins: [
 		//...
-		new ThreeWebpackPlugin()
+		new ThreeWebpackPlugin(/** library base Path or array of library base Paths, post processing folder path**/)
+		//e.g
+		// new ThreeWebpackPlugin('three/'); 
+		//or
+		// new ThreeWebpackPlugin('xtras/lib/'); 
+		//or
+		// new ThreeWebpackPlugin(['three/', 'xtras/lib/']);
+		//or
+		// new ThreeWebpackPlugin(['three/', 'xtras/lib/'], 'postprocessing/');
 	]
 };
 ````
+(**Note:** default values for library base path and post processing folder path are `'three/examples/js/'` and `'postprocessing/'` respectively)
 
 You can now import the classes in your application:
 ````js
