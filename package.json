@@ -28,7 +28,7 @@
     "loader-utils": "1.1.0"
   },
   "devDependencies": {
-    "@types/three": "0.92.14",
+    "@types/three": "0.93.0",
     "@wildpeaks/eslint-config-commonjs": "5.1.0",
     "eslint": "5.0.1",
     "express": "4.16.3",
