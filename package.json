@@ -39,7 +39,7 @@
     "three": "0.94.0",
     "ts-loader": "4.4.1",
     "typescript": "2.9.2",
-    "webpack": "4.21.0"
+    "webpack": "4.35.0"
   },
   "peerDependencies": {
     "three": "*",
